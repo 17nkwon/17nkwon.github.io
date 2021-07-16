@@ -1,7 +1,8 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+.grid-container {
+  display: grid;
+  grid-gap: 50px;
 }
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
