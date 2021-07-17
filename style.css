@@ -55,6 +55,11 @@ ul.posts li {
     list-style: none;
 }
 
+h2 {
+    font-size: 1.5em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+
 .wrapper {
   height: 100vh;
   /*This part is important for centering*/
@@ -63,24 +68,94 @@ ul.posts li {
   justify-content: center;
 }
 
-.typewriter {
-  width: 140ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: wrap;
+.typewriter h1, h2 {
+  border-right: .15em solid black;
+  white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
 }
 
-@keyframes typing {
-  from {
-    width: 0
+.typewriter h1:nth-child(1) {
+  width: 14em;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.typewriter h2:nth-child(2) {
+  width: 21em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid;
+  }
+  100% {
+    border: none;
   }
 }
-    
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
   }
 }
