@@ -47,31 +47,43 @@ footer ul li {
   margin-right: 20px;
 }
 
+h1 {
+  font-size: 4em;
+  font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+}
+
+h2 {
+  font-size: 2.5em;
+  font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+}
+
+h3 a {
+  font-size: 1.5em;
+  font-family: 'Arial', 'Sans-Serif';
+  color: black
+}
+
 a {
   text-decoration: none;
-  color: #999;
+  color:lightslategray;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-h1 {
-  font-size: 4em;
-  font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-
-h2 {
-  font-size: 2.5em;
-  font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-
 p {
   font-size: 1em;
+  font-family: 'Arial', 'Sans-Serif';
   color: #333;
 }
 
-/* Typewrting effect */
+img {
+  width: 500px;
+  height: 350px;
+}
+
+/* Typewrting effect (https://css-tricks.com/snippets/css/typewriter-effect/) */
 
 .typewriter h1, h2 {
   border-right: .15em solid black;
@@ -165,7 +177,7 @@ p {
   }
 }
 
-/* Arrow Animation */
+/* Arrow Animation (https://codepen.io/JoshMac/pen/MaYEmJ) */
 .arrow, .arrow:before {
   position: absolute;
   left: 50%;
