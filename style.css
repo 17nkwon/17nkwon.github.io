@@ -34,8 +34,7 @@ footer {
 }
 
 header {
-  border-top: 1px solid #d5d5d5;
-  font-size: .9em;
+  font-size: 1em;
   text-align: right;
   justify-content: center;
 }
@@ -49,14 +48,14 @@ ul.posts li {
   list-style: none;
 }
 
-footer ul {
+footer ul, header ul {
   font-family:'Helvetica', 'Arial', 'Sans-Serif';
   padding: 0px;
   list-style: none;
   font-weight: bold;
 }
 
-footer ul li {
+footer ul li, header ul li {
   display: inline;
   margin-right: 20px;
 }
@@ -97,8 +96,7 @@ img {
   height: 350px;
 }
 
-/* Typewrting effect (https://css-tricks.com/snippets/css/typewriter-effect/) */
-
+/* Typewriting effect (https://css-tricks.com/snippets/css/typewriter-effect/) */
 .typewriter h1, h2 {
   border-right: .15em solid black;
   white-space: nowrap;
@@ -234,7 +232,7 @@ img {
   }
 }
 
-/* Fade In Effect*/
+/* Fade In Effect */
 .fade-in {
   animation: fadeIn ease 15s;
   -webkit-animation: fadeIn ease 15s;
