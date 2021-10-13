@@ -34,7 +34,7 @@
 }
 
 .container-element:first-child {
-  margin-right: 50px;
+  margin-right: 40px;
   flex-shrink: 2;
 }
 
@@ -109,10 +109,14 @@ h3 a {
 
 #aboutcol {
   padding-right: 2em;
-  padding-top: 3em;
-  padding-bottom: 1.5em;
+  padding-top: 2em;
   background-color: lightcyan;
   border-radius: 5px;
+}
+
+#aboutinfo {
+  font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+  font-size: 1.4em;
 }
 
 a {
@@ -125,7 +129,7 @@ a:hover {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: 'Arial', 'Sans-Serif';
   color: #333;
 }
